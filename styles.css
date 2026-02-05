@@ -1,6 +1,6 @@
-/* ------------------------------------------------------ */
+/* -------------------------------------------------- */
 /* 🐾 FONDO GENERAL */
-/* ------------------------------------------------------ */
+/* -------------------------------------------------- */
 
 body {
     background-image: url("imagenes/logan.jpg");
@@ -9,12 +9,12 @@ body {
     background-attachment: fixed;
     height: auto;
     min-height: 200vh;
-    margin: 10;
+    margin: 10px;
 }
 
-/* ------------------------------------------------------ */
-/* 🐾 CUADRO DE INFORMACIÓN */
-/* ------------------------------------------------------ */
+/* -------------------------------------------------- */
+/* 🐶 CUADRO DE INFORMACIÓN */
+/* -------------------------------------------------- */
 
 .info-box {
     background: rgba(0, 0, 0, 0.78);
@@ -46,25 +46,20 @@ body {
     margin-bottom: 30px;
 }
 
-/* ------------------------------------------------------ */
-/* 🐾 LOGO TEAMING */
-/* ------------------------------------------------------ */
-
+/* LOGO TEAMING */
 .teaming-img {
-    width: 600px;     /* 👈 AJUSTA ESTE VALOR PARA HACERLO MÁS GRANDE */
-    height: auto;
-    display: block;
+    width: 380px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* ------------------------------------------------------ */
-/* 🟢 BOTÓN TEAMING */
-/* ------------------------------------------------------ */
+/* -------------------------------------------------- */
+/* 🤝 BOTÓN TEAMING */
+/* -------------------------------------------------- */
 
 .btn-teaming {
     display: inline-block;
-    margin-top: 150px;
+    margin-top: 80px;
     padding: 25px 40px;
     background: linear-gradient(135deg, #28a745, #34d058);
     color: white;
@@ -72,20 +67,32 @@ body {
     font-weight: bold;
     text-decoration: none;
     border-radius: 18px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
     transition: all 0.25s ease-in-out;
     border: 2px solid rgba(255,255,255,0.4);
 }
 
 .btn-teaming:hover {
     transform: scale(1.08);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
     background: linear-gradient(135deg, #34d058, #50e878);
 }
 
-/* ------------------------------------------------------ */
+/* -------------------------------------------------- */
+/* 🙏 MENSAJE DE AGRADECIMIENTO */
+/* -------------------------------------------------- */
+
+.agradecimiento {
+    margin-top: 80px;
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+
+
+/* -------------------------------------------------- */
 /* 📱 MODO MÓVIL */
-/* ------------------------------------------------------ */
+/* -------------------------------------------------- */
 
 @media (max-width: 768px) {
 
@@ -93,64 +100,65 @@ body {
         background-size: cover;
         background-position: center top;
         height: auto !important;
+        min-height: 100vh;
+        margin: 0;
     }
 
     .info-box {
-        width: 90vw;
+        width: 92vw;
         min-height: auto;
         padding: 25px;
+        padding-bottom: 40px;
+
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
+
         border-radius: 15px;
+
+        /* Mucho más transparente → Logan visible */
+        background: rgba(0, 0, 0, 0.55);
     }
 
     .info-box h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 34px;
+        margin-bottom: 15px;
         line-height: 1.2;
+        text-align: center;
     }
 
     .info-box p {
-        font-size: 24px;
-        margin-bottom: 25px;
-    }
-
-    /* Logo Teaming más pequeño en móvil */
-    .teaming-img {
-        width: 300px; /* 👈 ajustable */
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-    /* Botón más pequeño en móvil */
-    .btn-teaming {
-        font-size: 40px;
-        padding: 20px 30px;
-        margin-top: 120px;
-    }
-}
-/* FOOTER */
-.footer {
-    position: absolute;
-    bottom: 40px;
-    left: 50px;
-    font-size: 48px;
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 400;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
-
-/* Footer móvil */
-@media (max-width: 768px) {
-    .footer {
-        position: relative;
-        bottom: auto;
-        left: 0;
-        margin-top: 40px;
+        font-size: 20px;
+        margin-bottom: 15px;
         text-align: center;
+    }
+
+    /* LOGO TEAMING */
+    .teaming-img {
+        width: 180px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* BOTÓN */
+    .btn-teaming {
+        margin-top: 25px;
+        padding: 18px 25px;
+        font-size: 24px;
+        border-radius: 12px;
         width: 100%;
-        font-size: 22px;
+        text-align: center;
+    }
+
+    /* MENSAJE DE AGRADECIMIENTO */
+    .agradecimiento {
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 1.3;
+        text-align: center;
     }
 }
+
 
